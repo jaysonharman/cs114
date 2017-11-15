@@ -1,29 +1,31 @@
+
 import random
+"""
+random number function
+"""
 
-print("MAGIC 8 BALL: THE COMPUTER")
-input()
-print("Type in your name to reveal your fortune, then push enter")
-input()
+def getNumber(randomnumber):
 
-random_num = random.randint(1, 9)
+    if randomnumber == 1:
+        return "Your future does not look good"
+    elif randomnumber == 2:
+        return "Your future looks bright"
+    elif randomnumber == 3:
+        return "Your future is filled with bad news"
+    elif randomnumber == 4:
+        return "Your future is filled with happiness"
+    elif randomnumber == 5:
+        return "Your future will end soon"
+    elif randomnumber == 6:
+        return "Your future will last a very long time"
+    elif randomnumber == 7:
+        return "Your future is scary"
+    elif randomnumber == 8:
+        return "Your future is happy"
+    elif randomnumber == 9:
+        return "Your future is death"
 
-print("Your fortune = ")
+r = random.randint(1,9)
+magic_ball = getNumber(r)
 
-if random_num == 1:
-    print("You will never die.")
-if random_num == 2:
-    print("You will die tomorrow.")
-if random_num == 3:
-    print ("You will die very old..")
-if random_num == 4:
-    print("You will die happy.")
-if random_num == 5:
-    print("You will die alone.")
-if random_num == 6:
-    print ("You will die young.")
-if random_num == 7:
-    print("You will die broke.")
-if random_num == 8:
-    print("You will die hated by the world.")
-if random_num == 9:
-    print ("You will die loved by the whole world.")
+print(magic_ball)
