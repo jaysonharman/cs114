@@ -1,9 +1,14 @@
 import random
 
-print("PRESS ENTER TO BATTLE")
+print("PRESS ENTER TO ENTER THE DUNGEON")
 input()
 
 spam = ['Guard', 'Monster', 'WareWolf', 'Wizard']
+
+def intro():
+    print("You have entered the dungeon...")
+    print("Would you like to go left or right?")
+    input()
 
 
 def battle(spam):
